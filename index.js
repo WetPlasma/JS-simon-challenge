@@ -26,13 +26,13 @@ function nextSequence() {
         .fadeOut(100)
         .fadeIn(100);
     
-    var audio = new Audio("" + chosenColor + ".mp3");
+    var audio = new Audio(chosenColor + ".mp3");
     audio.play();
 }
 
 $(".btn").on("click", function(event) {
     var userChosenColor = $(this).attr("id");
-    var sou = new Audio("" + userChosenColor + ".mp3");
+    var sou = new Audio(userChosenColor + ".mp3");
     sou.play();   
 
     $("#" + userChosenColor).addClass("pressed");
